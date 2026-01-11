@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XV de Isa</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/xld1tlu.css" />
+  <link rel="icon" href="assets/iconos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/iconos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/iconos/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/iconos/apple-touch.png">
+</head>
+<body>
+
+  <!-- ===== Animación inicial ===== -->
+  <div id="intro-animation">
+    <img src="assets/graphics/ISA-14.svg" alt="Logo XV" />
+  </div>
+
+  <!-- ===== Contenedor principal ===== -->
+  <main id="main-content" class="hidden">
+
+    <!-- ===== Fecha y cuenta regresiva ===== -->
+    <section id="fecha">
+      <h2 id="preparate">PREPARATE PARA LA MEJOR NOCHE</h2>
+      <h2>16 de febrero</h2>
+      <div id="countdown">
+        <div class="countdown-item">
+          <span class="number" id="dias">0</span>
+          <span class="label">días</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="horas">0</span>
+          <span class="label">horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="minutos">0</span>
+          <span class="label">minutos</span>
+        </div>
+      </div>
+      <a id="add-calendar" href="#" target="_blank">AGREGÁ LA FECHA A TU AGENDA</a>
+    </section>
+
+    <section id="carrusel">
+      <div class="slides">
+        <img src="assets/images/fotoIsa1.jpg" alt="Foto 1" />
+        <img src="assets/images/fotoIsa3.jpg" alt="Foto 2" />
+        <img src="assets/images/fotoIsa2.jpg" alt="Foto 3" />
+        <img src="assets/images/fotoIsa6.jpg" alt="Foto 4" />
+      </div>
+
+      <!-- áreas clickeables invisibles -->
+      <div class="nav-area prev-area"></div>
+      <div class="nav-area next-area"></div>
+    </section>
+
+    <!-- ===== Ubicación ===== -->
+    <section id="ubicacion">
+      <p>SALÓN DE FIESTAS S.F.C.</p>
+      <img src="assets/graphics/UBI.svg" alt="Pin ubicación" class="pin" />
+      <button id="ver-mapa">Ver ubicación</button>
+      <p>21 HS</p>
+    </section>
+
+    <!-- ===== Cinta gráfica ===== -->
+    <section id="cinta-grafica">
+      <img src="assets/graphics/cinta.svg" alt="Cinta decorativa" />
+    </section>
+
+    <!-- ===== Solicitud de subir fotos ===== -->
+    <section id="subir-fotos">
+      <h3>Camera crumbs!!</h3>
+      <p>SUBÍ TUS FOTOS A IG Y @</p>
+      <button id="instagram">iisa.fernandez_</button>
+    </section>
+
+        <!-- ===== Foto grande estática ===== -->
+    <section id="foto-estatica">
+      <img src="assets/images/fotoIsa5.jpg" alt="Foto estática" />
+    </section>
+
+    <!-- ===== Confirmación de asistencia ===== -->
+    <section id="confirmacion">
+      <h3>Confirmá tu asistencia</h3>
+      <p>ANTES DEL 2 DE FEBRERO</p>
+      <form id="form-rsvp">
+        <label>
+          ¿POR CUÁNTAS PERSONAS CONFIRMÁS?
+          <select id="cantidad-personas" name="cantidad">
+            <option value="1">1 PERSONA</option>
+            <option value="2">2 PERSONAS</option>
+            <option value="3">3 PERSONAS</option>
+            <option value="4">4 PERSONAS</option>
+            <option value="5">5 PERSONAS</option>
+            <option value="6">6 PERSONAS</option>
+          </select>
+        </label>
+
+        <div id="personas-wrapper">
+          <!-- Formularios de personas dinámicos -->
+        </div>
+
+        <button type="submit">Confirmar</button>
+      </form>
+    </section>
+
+    <section id="cinta-grafica">
+      <img src="assets/graphics/cinta.svg" alt="Cinta decorativa" />
+    </section>
+
+    <!-- ===== Formulario de canciones ===== -->
+    <section id="canciones">
+      <h3>¿Qué música no puede faltar?</h3>
+      <p>AGREGÁ LAS CANCIONES QUE NO PUEDEN FALTAR PARA HACER ESTA NOCHE INOLVIDABLE</p>
+      <form id="form-canciones">
+        <input type="text" name="cancion" placeholder="Nombre de la canción" required />
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <!-- ===== Foto grande final ===== -->
+    <section id="foto-estatica">
+      <img src="assets/images/fotoIsa4.jpg" alt="Foto estática" />
+    </section>
+
+    <!-- ===== Cinta final ===== -->
+    <section id="cinta-final">
+      <img src="assets/graphics/ISA-15.svg" alt="Cinta decorativa final" />
+    </section>
+
+  </main>
+
+  <audio id="bg-music" loop>
+  <source src="assets/audio/music.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Botón flotante música -->
+  <button id="music-toggle" aria-label="Música">
+    <img src="assets/graphics/play.svg" alt="Play" />
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

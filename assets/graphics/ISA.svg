@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 899.99 555.22">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 665.68px;
+        opacity: .1;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Cinzel-Regular, Cinzel;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #1d1d1b;
+      }
+
+      .cls-2 {
+        font-size: 52.45px;
+      }
+
+      .cls-3 {
+        font-family: AbsoluteBeautyScript-Bold, 'Absolute Beauty Script';
+        font-size: 268.72px;
+        font-weight: 700;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-width: 1.89px;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-1" transform="translate(26.83 413.59)"><tspan x="0" y="0">xv</tspan></text>
+    <text class="cls-3" transform="translate(165.81 265.66)"><tspan x="0" y="0">Isabella</tspan></text>
+  </g>
+  <text class="cls-2" transform="translate(300.88 526.25)"><tspan x="0" y="0">Let´s </tspan><tspan class="cls-6" x="148.81" y="0">p</tspan><tspan x="174.93" y="0">a</tspan><tspan class="cls-5" x="209.71" y="0">r</tspan><tspan class="cls-7" x="241.29" y="0">t</tspan><tspan class="cls-4" x="272.13" y="0">y</tspan></text>
+</svg>

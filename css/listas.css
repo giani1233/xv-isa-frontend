@@ -1,0 +1,155 @@
+/* ===== Reset y estilos base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #1c1c1c;
+  line-height: 1.6;
+  padding: 2rem;
+  font-size: 16px;
+}
+
+/* ===== Header ===== */
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2rem;
+}
+
+/* ===== Confirmaciones Header ===== */
+.confirmaciones-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.confirmaciones-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.confirmaciones-header input {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  max-width: 250px;
+  transition: border 0.2s;
+}
+
+.confirmaciones-header input:focus {
+  border-color: #555;
+  outline: none;
+}
+
+/* ===== Tarjetas de confirmación ===== */
+.confirmacion {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow-x: auto;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.confirmacion:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.confirmacion h3 {
+  font-size: 1.2rem;
+  color: #111;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.25rem;
+}
+
+/* ===== Tablas internas ===== */
+.confirmacion table {
+  width: 100%;
+  min-width: 300px;
+  border-collapse: collapse;
+}
+
+.confirmacion th, .confirmacion td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.confirmacion th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+/* ===== Canciones ===== */
+.canciones-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+ul#lista-canciones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#lista-canciones li {
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #555;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .confirmaciones-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .confirmacion h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .confirmaciones-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .confirmacion h3 {
+    font-size: 1rem;
+  }
+}
