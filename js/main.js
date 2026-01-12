@@ -235,3 +235,30 @@ musicBtn.addEventListener('click', () => {
 });
 
 
+// ===== Botón Ver Regalo =====
+const verRegaloBtn = document.getElementById('ver-regalo');
+
+// Crear overlay y tarjeta dinámicamente
+const overlay = document.createElement('div');
+overlay.id = 'overlay-regalo';
+document.body.appendChild(overlay);
+
+const tarjeta = document.createElement('div');
+tarjeta.id = 'tarjeta-regalo';
+tarjeta.innerHTML = `
+  <p id="nombre-alias">Isabella Lourdes Fernandez</p>
+  <p>ALIAS: isaf15</p>
+`;
+document.body.appendChild(tarjeta);
+
+// Función para mostrar tarjeta
+verRegaloBtn.addEventListener('click', () => {
+  tarjeta.classList.add('visible');
+  overlay.classList.add('visible');
+});
+
+// Cerrar tarjeta al hacer clic en overlay
+overlay.addEventListener('click', () => {
+  tarjeta.classList.remove('visible');
+  overlay.classList.remove('visible');
+});
