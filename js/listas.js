@@ -1,5 +1,5 @@
 // ===== RSVP =====
-fetch('xv-isa-backend-production-36cf.up.railway.app/rsvp')
+fetch('https://xv-isa-backend-production-36cf.up.railway.app/rsvp')
   .then(res => res.json())
   .then(data => {
     const wrapper = document.getElementById('confirmaciones-wrapper');
@@ -82,7 +82,7 @@ fetch('xv-isa-backend-production-36cf.up.railway.app/rsvp')
 
 
 // ===== Canciones =====
-fetch('xv-isa-backend-production-36cf.up.railway.app/canciones/__listado_interno_xv_isa_2026')
+fetch('https://xv-isa-backend-production-36cf.up.railway.app/canciones/__listado_interno_xv_isa_2026')
   .then(res => res.json())
   .then(data => {
     const ul = document.getElementById('lista-canciones');
