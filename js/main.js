@@ -68,7 +68,7 @@ formRsvp.addEventListener('submit', async e => {
   }
 
   try {
-    const res = await fetch('http://localhost:3000/rsvp', {
+    const res = await fetch('xv-isa-backend-production-36cf.up.railway.app/rsvp', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ personas })
@@ -94,7 +94,7 @@ formCanciones.addEventListener('submit', async e => {
   if (!cancion) return alert('Por favor ingresa una canción.');
 
   try {
-    const res = await fetch('http://localhost:3000/canciones', {
+    const res = await fetch('xv-isa-backend-production-36cf.up.railway.app/canciones', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ cancion })
